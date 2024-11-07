@@ -1,0 +1,135 @@
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom,#26baf5, #67bcdd, #ffffff);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px; 
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-box {
+    padding: 12px;
+    font-size: 16px;
+    width: 70%;
+    border: 2px solid #ddd;
+    border-radius: 25px 0px 0px 25px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-box:focus {
+    border-color: #00aaff;
+}
+
+button {
+    background-color: #00aaff;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 0px 25px 25px 0px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0099cc;
+}
+
+.location-not-found {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.location-not-found img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.weather-body {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.weather-box {
+    margin-bottom: 20px;
+}
+
+.temperature {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 18px;
+    color: #555;
+}
+
+.weather-details {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.weather-details div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+}
+
+.weather-details i {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 600px) {
+    .temperature {
+        font-size: 36px;
+    }
+
+    .weather-img {
+        width: 80px;
+    }
+
+    .input-box {
+        font-size: 14px;
+    }
+
+    #searchBtn {
+        padding: 14px 12px;
+    }
+}
